@@ -1,0 +1,21 @@
+{
+  "name": "Landman S01E01: Pilot",
+  "symbol": "RSTRM",
+  "description": "Episode 1 of Landman. Delivered via the RelayStream DePIN stack.",
+  "image": "https://relaystream.net/covers/landman_s1.jpg",
+  "attributes": [
+    { "trait_type": "Series", "value": "Landman" },
+    { "trait_type": "Season", "value": "01" },
+    { "trait_type": "Episode", "value": "01" },
+    { "trait_type": "Format", "value": "MKV-Transmuxed" }
+  ],
+  "properties": {
+    "category": "video",
+    "files": [
+      {
+        "uri": "0G_DATA_MAP_PLACEHOLDER",
+        "type": "application/x-strm-tunnel"
+      }
+    ]
+  }
+}
