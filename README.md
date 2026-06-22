@@ -55,6 +55,33 @@ Current files include:
 * Stream registration workflows
 * Open-STRM prototype components
 
+## Review Materials
+
+### Sia Storage Proof Demo
+
+Documentation related to the RelayStream Sia Storage proof-of-work demonstration can be found here:
+
+- demos/sia-storage-proof/README.md
+
+This material documents hands-on evaluation of Sia Storage including contracts, buckets, object uploads, storage organization, and review of Sia developer tooling.
+
+### HLS Ingestion Workflow
+
+Example ingestion workflow documentation can be found here:
+
+- demos/hls-ingestion-proof/ffmpeg-hls-example.ps1
+
+This example demonstrates the type of FFmpeg-based processing used to generate HLS manifests and segmented media output.
+
+### Sia Integration Notes
+
+Architecture notes regarding Sia evaluation and integration can be found here:
+
+- docs/sia-integration-notes.md
+
+These notes describe how decentralized storage is being evaluated within the RelayStream Open Ingestion Engine architecture.
+
+
 ## Project Status
 
 Active Development
