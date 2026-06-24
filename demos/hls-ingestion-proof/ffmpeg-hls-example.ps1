@@ -9,6 +9,15 @@
 #   index.m3u8 manifest
 #   segmented .ts media chunks
 
+# This example reflects the RelayStream prototype ingestion pipeline.
+
+# Workflow:
+# Source Media
+# -> FFmpeg Processing
+# -> HLS Segmentation
+# -> Metadata Registration
+# -> Decentralized Storage Evaluation
+
 ffmpeg -y `
   -fflags +genpts `
   -i "C:\RelayStream\input\source-media.mp4" `
