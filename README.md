@@ -97,4 +97,6 @@ VAL IT Tech Solutions
 
 ## License
 
-MIT License
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full terms.
+
+Copyright 2026 Val IT Tech Solutions, LLC, subject to confirmation of the ownership of individual contributions. The Apache 2.0 license does not grant trademark rights to the RelayStream or Open-STRM brands.
