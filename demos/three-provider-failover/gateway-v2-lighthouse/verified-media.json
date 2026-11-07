@@ -1,0 +1,432 @@
+{
+  "schemaVersion": "open-strm.yc-demo-integrity/v1",
+  "assetId": "this-is-relaystream-extended-hls",
+  "verifiedAt": "2026-11-02T16:42:51.652Z",
+  "verifiedProviders": [
+    "sia",
+    "storj",
+    "lighthouse"
+  ],
+  "playlist": {
+    "count": 14,
+    "seconds": 71.9
+  },
+  "objects": [
+    {
+      "path": "index.m3u8",
+      "bytes": 603,
+      "sha256": "fa3cc6ac962cf0af1ec30d63e41192bf3958f8778083a3307a2ce65840ad5d9c"
+    },
+    {
+      "path": "segment_00000.ts",
+      "bytes": 13244600,
+      "sha256": "6b0dd2e335938e73beb759d44faabe5c8eee2d2fb8cd1eb9aaebf270e5c8c4b3"
+    },
+    {
+      "path": "segment_00001.ts",
+      "bytes": 13483360,
+      "sha256": "016220b4df0ea6442ba2d3216c9b5f1f6bf52e3e10c3bec2ddf2c5876ae36f80"
+    },
+    {
+      "path": "segment_00002.ts",
+      "bytes": 13545588,
+      "sha256": "53db7afde5bc701ef557838d8745c81707d0b7d75a4ac8cc893dfdcc5b8be4b5"
+    },
+    {
+      "path": "segment_00003.ts",
+      "bytes": 13223356,
+      "sha256": "2c9c5fcc73ac2e308b8db9e591233618a53f5c5faa77add5207861c658951a26"
+    },
+    {
+      "path": "segment_00004.ts",
+      "bytes": 13389360,
+      "sha256": "6ec11f91e57c2b33e8a6c0cdf34feff7340bb581ec9d0d31f4507cff578c28e5"
+    },
+    {
+      "path": "segment_00005.ts",
+      "bytes": 13383344,
+      "sha256": "9d7fc221c372023756fbbd3e048052af66a5ffaeb6c71b0d40183af7df5b8aa9"
+    },
+    {
+      "path": "segment_00006.ts",
+      "bytes": 13861992,
+      "sha256": "2ff0521749870c32cbd520da8bc6af22727b12e94ff6fd40f730150c31755ac9"
+    },
+    {
+      "path": "segment_00007.ts",
+      "bytes": 13760848,
+      "sha256": "81424e1990723c1e4fc44face235bddc2bdbbc3af016e8ffa6322114afe8540f"
+    },
+    {
+      "path": "segment_00008.ts",
+      "bytes": 12660672,
+      "sha256": "34b9b8af1ee59bbb03edd87771a878fad23d021e39ff9d83d685b29819f9c537"
+    },
+    {
+      "path": "segment_00009.ts",
+      "bytes": 13601424,
+      "sha256": "a3beb21f6d05ec05b9eaaf5fb06b4aa87863db3d255d5c3ace8640df38ed758c"
+    },
+    {
+      "path": "segment_00010.ts",
+      "bytes": 12848860,
+      "sha256": "4c06eb56328512c9bca996b50f9b6b5c78feae38a209cbb69457069ac84e37ef"
+    },
+    {
+      "path": "segment_00011.ts",
+      "bytes": 13178800,
+      "sha256": "df2a64c4925d24853aa2a2ca38664f9657fe8c78ddd8f97846999924515b2f87"
+    },
+    {
+      "path": "segment_00012.ts",
+      "bytes": 13802020,
+      "sha256": "97047e353197644f35f35627a1b65494999df6237f379d6ad21749452b494d1b"
+    },
+    {
+      "path": "segment_00013.ts",
+      "bytes": 9575592,
+      "sha256": "a2ffcf4f8986ec22af23cda33d76b0190742d8aff183493d2902fb8887006249"
+    }
+  ],
+  "measurements": [
+    {
+      "path": "index.m3u8",
+      "sia": {
+        "bytes": 603,
+        "sha256": "fa3cc6ac962cf0af1ec30d63e41192bf3958f8778083a3307a2ce65840ad5d9c",
+        "httpStatus": 200,
+        "elapsedMs": 922
+      },
+      "storj": {
+        "bytes": 603,
+        "sha256": "fa3cc6ac962cf0af1ec30d63e41192bf3958f8778083a3307a2ce65840ad5d9c",
+        "httpStatus": 200,
+        "elapsedMs": 458
+      }
+    },
+    {
+      "path": "segment_00000.ts",
+      "sia": {
+        "bytes": 13244600,
+        "sha256": "6b0dd2e335938e73beb759d44faabe5c8eee2d2fb8cd1eb9aaebf270e5c8c4b3",
+        "httpStatus": 200,
+        "elapsedMs": 3000
+      },
+      "storj": {
+        "bytes": 13244600,
+        "sha256": "6b0dd2e335938e73beb759d44faabe5c8eee2d2fb8cd1eb9aaebf270e5c8c4b3",
+        "httpStatus": 200,
+        "elapsedMs": 1979
+      }
+    },
+    {
+      "path": "segment_00001.ts",
+      "sia": {
+        "bytes": 13483360,
+        "sha256": "016220b4df0ea6442ba2d3216c9b5f1f6bf52e3e10c3bec2ddf2c5876ae36f80",
+        "httpStatus": 200,
+        "elapsedMs": 183
+      },
+      "storj": {
+        "bytes": 13483360,
+        "sha256": "016220b4df0ea6442ba2d3216c9b5f1f6bf52e3e10c3bec2ddf2c5876ae36f80",
+        "httpStatus": 200,
+        "elapsedMs": 1562
+      }
+    },
+    {
+      "path": "segment_00002.ts",
+      "sia": {
+        "bytes": 13545588,
+        "sha256": "53db7afde5bc701ef557838d8745c81707d0b7d75a4ac8cc893dfdcc5b8be4b5",
+        "httpStatus": 200,
+        "elapsedMs": 156
+      },
+      "storj": {
+        "bytes": 13545588,
+        "sha256": "53db7afde5bc701ef557838d8745c81707d0b7d75a4ac8cc893dfdcc5b8be4b5",
+        "httpStatus": 200,
+        "elapsedMs": 1457
+      }
+    },
+    {
+      "path": "segment_00003.ts",
+      "sia": {
+        "bytes": 13223356,
+        "sha256": "2c9c5fcc73ac2e308b8db9e591233618a53f5c5faa77add5207861c658951a26",
+        "httpStatus": 200,
+        "elapsedMs": 186
+      },
+      "storj": {
+        "bytes": 13223356,
+        "sha256": "2c9c5fcc73ac2e308b8db9e591233618a53f5c5faa77add5207861c658951a26",
+        "httpStatus": 200,
+        "elapsedMs": 1538
+      }
+    },
+    {
+      "path": "segment_00004.ts",
+      "sia": {
+        "bytes": 13389360,
+        "sha256": "6ec11f91e57c2b33e8a6c0cdf34feff7340bb581ec9d0d31f4507cff578c28e5",
+        "httpStatus": 200,
+        "elapsedMs": 8794
+      },
+      "storj": {
+        "bytes": 13389360,
+        "sha256": "6ec11f91e57c2b33e8a6c0cdf34feff7340bb581ec9d0d31f4507cff578c28e5",
+        "httpStatus": 200,
+        "elapsedMs": 2012
+      }
+    },
+    {
+      "path": "segment_00005.ts",
+      "sia": {
+        "bytes": 13383344,
+        "sha256": "9d7fc221c372023756fbbd3e048052af66a5ffaeb6c71b0d40183af7df5b8aa9",
+        "httpStatus": 200,
+        "elapsedMs": 4724
+      },
+      "storj": {
+        "bytes": 13383344,
+        "sha256": "9d7fc221c372023756fbbd3e048052af66a5ffaeb6c71b0d40183af7df5b8aa9",
+        "httpStatus": 200,
+        "elapsedMs": 2142
+      }
+    },
+    {
+      "path": "segment_00006.ts",
+      "sia": {
+        "bytes": 13861992,
+        "sha256": "2ff0521749870c32cbd520da8bc6af22727b12e94ff6fd40f730150c31755ac9",
+        "httpStatus": 200,
+        "elapsedMs": 4938
+      },
+      "storj": {
+        "bytes": 13861992,
+        "sha256": "2ff0521749870c32cbd520da8bc6af22727b12e94ff6fd40f730150c31755ac9",
+        "httpStatus": 200,
+        "elapsedMs": 1885
+      }
+    },
+    {
+      "path": "segment_00007.ts",
+      "sia": {
+        "bytes": 13760848,
+        "sha256": "81424e1990723c1e4fc44face235bddc2bdbbc3af016e8ffa6322114afe8540f",
+        "httpStatus": 200,
+        "elapsedMs": 4285
+      },
+      "storj": {
+        "bytes": 13760848,
+        "sha256": "81424e1990723c1e4fc44face235bddc2bdbbc3af016e8ffa6322114afe8540f",
+        "httpStatus": 200,
+        "elapsedMs": 2350
+      }
+    },
+    {
+      "path": "segment_00008.ts",
+      "sia": {
+        "bytes": 12660672,
+        "sha256": "34b9b8af1ee59bbb03edd87771a878fad23d021e39ff9d83d685b29819f9c537",
+        "httpStatus": 200,
+        "elapsedMs": 2718
+      },
+      "storj": {
+        "bytes": 12660672,
+        "sha256": "34b9b8af1ee59bbb03edd87771a878fad23d021e39ff9d83d685b29819f9c537",
+        "httpStatus": 200,
+        "elapsedMs": 1569
+      }
+    },
+    {
+      "path": "segment_00009.ts",
+      "sia": {
+        "bytes": 13601424,
+        "sha256": "a3beb21f6d05ec05b9eaaf5fb06b4aa87863db3d255d5c3ace8640df38ed758c",
+        "httpStatus": 200,
+        "elapsedMs": 2868
+      },
+      "storj": {
+        "bytes": 13601424,
+        "sha256": "a3beb21f6d05ec05b9eaaf5fb06b4aa87863db3d255d5c3ace8640df38ed758c",
+        "httpStatus": 200,
+        "elapsedMs": 1553
+      }
+    },
+    {
+      "path": "segment_00010.ts",
+      "sia": {
+        "bytes": 12848860,
+        "sha256": "4c06eb56328512c9bca996b50f9b6b5c78feae38a209cbb69457069ac84e37ef",
+        "httpStatus": 200,
+        "elapsedMs": 3504
+      },
+      "storj": {
+        "bytes": 12848860,
+        "sha256": "4c06eb56328512c9bca996b50f9b6b5c78feae38a209cbb69457069ac84e37ef",
+        "httpStatus": 200,
+        "elapsedMs": 1526
+      }
+    },
+    {
+      "path": "segment_00011.ts",
+      "sia": {
+        "bytes": 13178800,
+        "sha256": "df2a64c4925d24853aa2a2ca38664f9657fe8c78ddd8f97846999924515b2f87",
+        "httpStatus": 200,
+        "elapsedMs": 3899
+      },
+      "storj": {
+        "bytes": 13178800,
+        "sha256": "df2a64c4925d24853aa2a2ca38664f9657fe8c78ddd8f97846999924515b2f87",
+        "httpStatus": 200,
+        "elapsedMs": 1531
+      }
+    },
+    {
+      "path": "segment_00012.ts",
+      "sia": {
+        "bytes": 13802020,
+        "sha256": "97047e353197644f35f35627a1b65494999df6237f379d6ad21749452b494d1b",
+        "httpStatus": 200,
+        "elapsedMs": 4165
+      },
+      "storj": {
+        "bytes": 13802020,
+        "sha256": "97047e353197644f35f35627a1b65494999df6237f379d6ad21749452b494d1b",
+        "httpStatus": 200,
+        "elapsedMs": 1897
+      }
+    },
+    {
+      "path": "segment_00013.ts",
+      "sia": {
+        "bytes": 9575592,
+        "sha256": "a2ffcf4f8986ec22af23cda33d76b0190742d8aff183493d2902fb8887006249",
+        "httpStatus": 200,
+        "elapsedMs": 2107
+      },
+      "storj": {
+        "bytes": 9575592,
+        "sha256": "a2ffcf4f8986ec22af23cda33d76b0190742d8aff183493d2902fb8887006249",
+        "httpStatus": 200,
+        "elapsedMs": 1362
+      }
+    }
+  ],
+  "note": "Local demo verification record; unsigned, not a production attestation or durability proof.",
+  "lighthouseVerification": {
+    "provider": "lighthouse",
+    "gateway": "https://eager-pony-phyvv.lighthouseweb3.xyz/ipfs/bafybeib5umus5hgdegzpruvvrzrukpphlg6zzmk3pdmy4jer527abft6y4/",
+    "verifiedAt": "2026-11-05T22:11:41.182Z",
+    "measurements": [
+      {
+        "path": "index.m3u8",
+        "bytes": 603,
+        "sha256": "fa3cc6ac962cf0af1ec30d63e41192bf3958f8778083a3307a2ce65840ad5d9c",
+        "httpStatus": 200,
+        "elapsedMs": 5658
+      },
+      {
+        "path": "segment_00000.ts",
+        "bytes": 13244600,
+        "sha256": "6b0dd2e335938e73beb759d44faabe5c8eee2d2fb8cd1eb9aaebf270e5c8c4b3",
+        "httpStatus": 200,
+        "elapsedMs": 15142
+      },
+      {
+        "path": "segment_00001.ts",
+        "bytes": 13483360,
+        "sha256": "016220b4df0ea6442ba2d3216c9b5f1f6bf52e3e10c3bec2ddf2c5876ae36f80",
+        "httpStatus": 200,
+        "elapsedMs": 8862
+      },
+      {
+        "path": "segment_00002.ts",
+        "bytes": 13545588,
+        "sha256": "53db7afde5bc701ef557838d8745c81707d0b7d75a4ac8cc893dfdcc5b8be4b5",
+        "httpStatus": 200,
+        "elapsedMs": 5941
+      },
+      {
+        "path": "segment_00003.ts",
+        "bytes": 13223356,
+        "sha256": "2c9c5fcc73ac2e308b8db9e591233618a53f5c5faa77add5207861c658951a26",
+        "httpStatus": 200,
+        "elapsedMs": 9825
+      },
+      {
+        "path": "segment_00004.ts",
+        "bytes": 13389360,
+        "sha256": "6ec11f91e57c2b33e8a6c0cdf34feff7340bb581ec9d0d31f4507cff578c28e5",
+        "httpStatus": 200,
+        "elapsedMs": 9895
+      },
+      {
+        "path": "segment_00005.ts",
+        "bytes": 13383344,
+        "sha256": "9d7fc221c372023756fbbd3e048052af66a5ffaeb6c71b0d40183af7df5b8aa9",
+        "httpStatus": 200,
+        "elapsedMs": 11189
+      },
+      {
+        "path": "segment_00006.ts",
+        "bytes": 13861992,
+        "sha256": "2ff0521749870c32cbd520da8bc6af22727b12e94ff6fd40f730150c31755ac9",
+        "httpStatus": 200,
+        "elapsedMs": 6416
+      },
+      {
+        "path": "segment_00007.ts",
+        "bytes": 13760848,
+        "sha256": "81424e1990723c1e4fc44face235bddc2bdbbc3af016e8ffa6322114afe8540f",
+        "httpStatus": 200,
+        "elapsedMs": 5345
+      },
+      {
+        "path": "segment_00008.ts",
+        "bytes": 12660672,
+        "sha256": "34b9b8af1ee59bbb03edd87771a878fad23d021e39ff9d83d685b29819f9c537",
+        "httpStatus": 200,
+        "elapsedMs": 5197
+      },
+      {
+        "path": "segment_00009.ts",
+        "bytes": 13601424,
+        "sha256": "a3beb21f6d05ec05b9eaaf5fb06b4aa87863db3d255d5c3ace8640df38ed758c",
+        "httpStatus": 200,
+        "elapsedMs": 4950
+      },
+      {
+        "path": "segment_00010.ts",
+        "bytes": 12848860,
+        "sha256": "4c06eb56328512c9bca996b50f9b6b5c78feae38a209cbb69457069ac84e37ef",
+        "httpStatus": 200,
+        "elapsedMs": 8443
+      },
+      {
+        "path": "segment_00011.ts",
+        "bytes": 13178800,
+        "sha256": "df2a64c4925d24853aa2a2ca38664f9657fe8c78ddd8f97846999924515b2f87",
+        "httpStatus": 200,
+        "elapsedMs": 4916
+      },
+      {
+        "path": "segment_00012.ts",
+        "bytes": 13802020,
+        "sha256": "97047e353197644f35f35627a1b65494999df6237f379d6ad21749452b494d1b",
+        "httpStatus": 200,
+        "elapsedMs": 4906
+      },
+      {
+        "path": "segment_00013.ts",
+        "bytes": 9575592,
+        "sha256": "a2ffcf4f8986ec22af23cda33d76b0190742d8aff183493d2902fb8887006249",
+        "httpStatus": 200,
+        "elapsedMs": 4602
+      }
+    ],
+    "note": "Gateway retrieval and byte equality only; not a Filecoin deal or durability attestation."
+  }
+}

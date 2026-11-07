@@ -1,0 +1,31 @@
+BUILD VALIDATION — 2026-11-05
+
+16 local synthetic HTTP gateway tests passed; zero failures.
+JavaScript syntax checks passed for server, media, verifier, and dashboard.
+
+Live Lighthouse verification:
+15/15 objects matched the original Sia/Storj SHA-256 inventory.
+Total verified upstream bytes: 183,560,419.
+See lighthouse-verification.json for HTTP status, hash, size, and timing.
+
+Live gateway integration check:
+With Sia and Storj both simulated blocked, the gateway retrieved and served
+index.m3u8 and segment_00000.ts from the real configured Lighthouse endpoint.
+The segment contained 13,244,600 bytes and matched its expected hash.
+The playlist was verified upstream before relative paths were rewritten to
+/play/ routes. See live-gateway-check.json for retrieval evidence.
+
+Not checked here:
+Windows launch, dashboard visual layout, decoded video playback, and full
+three-provider playback continuity on Michael's machine.
+Sia/Storj live verification records are carried forward from the uploaded v1
+package; those real endpoints were not rechecked in this build environment.
+No storage-network outage or Filecoin deal/durability claim is made.
+
+REPOSITORY PREPARATION — 2026-11-07
+The earlier build notes above are historical. Subsequent founder-supplied
+Windows exports document full three-provider playback; see ../evidence/.
+All 16 local fixture tests pass after correcting obsolete hostname detection
+in the test harness. Runtime gateway files are unchanged from the PASS backup.
+JavaScript syntax and saved evidence consistency were checked locally.
+No new real-provider downloads or Windows playback were performed in this pass.
