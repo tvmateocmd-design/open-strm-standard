@@ -1,0 +1,611 @@
+{
+  "demo": "RelayStream standalone YC provider failover",
+  "exportedAt": "2026-11-06T01:09:12.585Z",
+  "runStarted": "2026-11-06T01:07:52.514Z",
+  "disclosure": "Sia and Storj outages, when enabled, are simulated inside the gateway. Upstream media downloads and hash checks are real.",
+  "limitations": "Browser events are client observations, not signed attestations. Buffered playback may mask an outage. Rights clearance is not verified by this software.",
+  "playerURL": "http://127.0.0.1:3088/play/index.m3u8",
+  "gateway": {
+    "activeRoute": "lighthouse",
+    "preferred": "lighthouse",
+    "simulated": true,
+    "blockedProviders": [
+      "sia",
+      "storj"
+    ],
+    "recoveryMs": 5337,
+    "outageToFallbackMs": 3519,
+    "inflight": 0,
+    "verifiedAt": "2026-11-02T16:42:51.652Z",
+    "package": {
+      "count": 14,
+      "seconds": 71.9
+    },
+    "providers": {
+      "sia": {
+        "status": "Simulated unavailable",
+        "verifiedBytes": 66886867,
+        "deliveries": 6
+      },
+      "storj": {
+        "status": "Simulated unavailable",
+        "verifiedBytes": 27245336,
+        "deliveries": 2
+      },
+      "lighthouse": {
+        "status": "Retrieval verified",
+        "verifiedBytes": 89428216,
+        "deliveries": 7
+      }
+    },
+    "events": [
+      {
+        "id": 37,
+        "at": "2026-11-06T01:07:52.510Z",
+        "kind": "RESET",
+        "note": "New demo run; primary is Sia."
+      },
+      {
+        "id": 38,
+        "at": "2026-11-06T01:07:52.527Z",
+        "kind": "REQUEST",
+        "requestId": "7b207d422f",
+        "provider": "sia",
+        "object": "index.m3u8"
+      },
+      {
+        "id": 39,
+        "at": "2026-11-06T01:07:53.319Z",
+        "kind": "DELIVERED",
+        "requestId": "7b207d422f",
+        "provider": "sia",
+        "object": "index.m3u8",
+        "bytes": 603,
+        "httpStatus": 200,
+        "sha256": "fa3cc6ac962cf0af1ec30d63e41192bf3958f8778083a3307a2ce65840ad5d9c",
+        "attemptMs": 791,
+        "requestMs": 792,
+        "failover": false
+      },
+      {
+        "id": 40,
+        "at": "2026-11-06T01:07:53.336Z",
+        "kind": "REQUEST",
+        "requestId": "5bfd218d36",
+        "provider": "sia",
+        "object": "segment_00000.ts"
+      },
+      {
+        "id": 41,
+        "at": "2026-11-06T01:07:56.177Z",
+        "kind": "DELIVERED",
+        "requestId": "5bfd218d36",
+        "provider": "sia",
+        "object": "segment_00000.ts",
+        "bytes": 13244600,
+        "httpStatus": 200,
+        "sha256": "6b0dd2e335938e73beb759d44faabe5c8eee2d2fb8cd1eb9aaebf270e5c8c4b3",
+        "attemptMs": 2841,
+        "requestMs": 2841,
+        "failover": false
+      },
+      {
+        "id": 42,
+        "at": "2026-11-06T01:07:56.382Z",
+        "kind": "REQUEST",
+        "requestId": "a11f8b2e02",
+        "provider": "sia",
+        "object": "segment_00001.ts"
+      },
+      {
+        "id": 43,
+        "at": "2026-11-06T01:07:56.739Z",
+        "kind": "DELIVERED",
+        "requestId": "a11f8b2e02",
+        "provider": "sia",
+        "object": "segment_00001.ts",
+        "bytes": 13483360,
+        "httpStatus": 200,
+        "sha256": "016220b4df0ea6442ba2d3216c9b5f1f6bf52e3e10c3bec2ddf2c5876ae36f80",
+        "attemptMs": 357,
+        "requestMs": 357,
+        "failover": false
+      },
+      {
+        "id": 44,
+        "at": "2026-11-06T01:07:56.959Z",
+        "kind": "REQUEST",
+        "requestId": "f9d0e7d4de",
+        "provider": "sia",
+        "object": "segment_00002.ts"
+      },
+      {
+        "id": 45,
+        "at": "2026-11-06T01:07:57.516Z",
+        "kind": "DELIVERED",
+        "requestId": "f9d0e7d4de",
+        "provider": "sia",
+        "object": "segment_00002.ts",
+        "bytes": 13545588,
+        "httpStatus": 200,
+        "sha256": "53db7afde5bc701ef557838d8745c81707d0b7d75a4ac8cc893dfdcc5b8be4b5",
+        "attemptMs": 557,
+        "requestMs": 557,
+        "failover": false
+      },
+      {
+        "id": 46,
+        "at": "2026-11-06T01:07:57.676Z",
+        "kind": "REQUEST",
+        "requestId": "2c82ce463f",
+        "provider": "sia",
+        "object": "segment_00003.ts"
+      },
+      {
+        "id": 47,
+        "at": "2026-11-06T01:07:57.988Z",
+        "kind": "DELIVERED",
+        "requestId": "2c82ce463f",
+        "provider": "sia",
+        "object": "segment_00003.ts",
+        "bytes": 13223356,
+        "httpStatus": 200,
+        "sha256": "2c9c5fcc73ac2e308b8db9e591233618a53f5c5faa77add5207861c658951a26",
+        "attemptMs": 312,
+        "requestMs": 312,
+        "failover": false
+      },
+      {
+        "id": 48,
+        "at": "2026-11-06T01:07:58.192Z",
+        "kind": "REQUEST",
+        "requestId": "649dbe5f37",
+        "provider": "sia",
+        "object": "segment_00004.ts"
+      },
+      {
+        "id": 49,
+        "at": "2026-11-06T01:08:01.503Z",
+        "kind": "DELIVERED",
+        "requestId": "649dbe5f37",
+        "provider": "sia",
+        "object": "segment_00004.ts",
+        "bytes": 13389360,
+        "httpStatus": 200,
+        "sha256": "6ec11f91e57c2b33e8a6c0cdf34feff7340bb581ec9d0d31f4507cff578c28e5",
+        "attemptMs": 3311,
+        "requestMs": 3311,
+        "failover": false
+      },
+      {
+        "id": 50,
+        "at": "2026-11-06T01:08:01.638Z",
+        "kind": "REQUEST",
+        "requestId": "082d247cb7",
+        "provider": "sia",
+        "object": "segment_00005.ts"
+      },
+      {
+        "id": 51,
+        "at": "2026-11-06T01:08:04.506Z",
+        "kind": "SIMULATED_OUTAGE",
+        "provider": "sia",
+        "note": "Gateway-only simulation; upstream services and media are unchanged."
+      },
+      {
+        "id": 52,
+        "at": "2026-11-06T01:08:04.552Z",
+        "kind": "FAILED",
+        "requestId": "082d247cb7",
+        "provider": "sia",
+        "object": "segment_00005.ts",
+        "code": "SIMULATED_CANCEL",
+        "bytes": 0,
+        "httpStatus": null
+      },
+      {
+        "id": 53,
+        "at": "2026-11-06T01:08:04.552Z",
+        "kind": "REQUEST",
+        "requestId": "082d247cb7",
+        "provider": "storj",
+        "object": "segment_00005.ts"
+      },
+      {
+        "id": 54,
+        "at": "2026-11-06T01:08:06.863Z",
+        "kind": "DELIVERED",
+        "requestId": "082d247cb7",
+        "provider": "storj",
+        "object": "segment_00005.ts",
+        "bytes": 13383344,
+        "httpStatus": 200,
+        "sha256": "9d7fc221c372023756fbbd3e048052af66a5ffaeb6c71b0d40183af7df5b8aa9",
+        "attemptMs": 2311,
+        "requestMs": 5226,
+        "failover": true
+      },
+      {
+        "id": 55,
+        "at": "2026-11-06T01:08:06.863Z",
+        "kind": "FAILOVER",
+        "requestId": "082d247cb7",
+        "to": "storj",
+        "object": "segment_00005.ts",
+        "retrievalRecoveryMs": 5226,
+        "note": "Verified fallback bytes ready at gateway; playback is measured separately."
+      },
+      {
+        "id": 56,
+        "at": "2026-11-06T01:08:07.052Z",
+        "kind": "REQUEST",
+        "requestId": "6fb006d159",
+        "provider": "storj",
+        "object": "segment_00006.ts"
+      },
+      {
+        "id": 57,
+        "at": "2026-11-06T01:08:08.900Z",
+        "kind": "DELIVERED",
+        "requestId": "6fb006d159",
+        "provider": "storj",
+        "object": "segment_00006.ts",
+        "bytes": 13861992,
+        "httpStatus": 200,
+        "sha256": "2ff0521749870c32cbd520da8bc6af22727b12e94ff6fd40f730150c31755ac9",
+        "attemptMs": 1848,
+        "requestMs": 1848,
+        "failover": false
+      },
+      {
+        "id": 58,
+        "at": "2026-11-06T01:08:09.035Z",
+        "kind": "REQUEST",
+        "requestId": "70657b2298",
+        "provider": "storj",
+        "object": "segment_00007.ts"
+      },
+      {
+        "id": 59,
+        "at": "2026-11-06T01:08:10.853Z",
+        "kind": "SIMULATED_OUTAGE",
+        "provider": "storj",
+        "note": "Gateway-only simulation; upstream services and media are unchanged."
+      },
+      {
+        "id": 60,
+        "at": "2026-11-06T01:08:10.864Z",
+        "kind": "FAILED",
+        "requestId": "70657b2298",
+        "provider": "storj",
+        "object": "segment_00007.ts",
+        "code": "SIMULATED_CANCEL",
+        "bytes": 8548832,
+        "httpStatus": 200
+      },
+      {
+        "id": 61,
+        "at": "2026-11-06T01:08:10.864Z",
+        "kind": "SIMULATED_READ_BLOCKED",
+        "requestId": "70657b2298",
+        "provider": "sia",
+        "object": "segment_00007.ts",
+        "bytes": 0,
+        "note": "No upstream request made for this blocked provider."
+      },
+      {
+        "id": 62,
+        "at": "2026-11-06T01:08:10.864Z",
+        "kind": "REQUEST",
+        "requestId": "70657b2298",
+        "provider": "lighthouse",
+        "object": "segment_00007.ts"
+      },
+      {
+        "id": 63,
+        "at": "2026-11-06T01:08:14.371Z",
+        "kind": "DELIVERED",
+        "requestId": "70657b2298",
+        "provider": "lighthouse",
+        "object": "segment_00007.ts",
+        "bytes": 13760848,
+        "httpStatus": 200,
+        "sha256": "81424e1990723c1e4fc44face235bddc2bdbbc3af016e8ffa6322114afe8540f",
+        "attemptMs": 3507,
+        "requestMs": 5337,
+        "failover": true
+      },
+      {
+        "id": 64,
+        "at": "2026-11-06T01:08:14.371Z",
+        "kind": "FAILOVER",
+        "requestId": "70657b2298",
+        "to": "lighthouse",
+        "object": "segment_00007.ts",
+        "retrievalRecoveryMs": 5337,
+        "note": "Verified fallback bytes ready at gateway; playback is measured separately."
+      },
+      {
+        "id": 65,
+        "at": "2026-11-06T01:08:14.515Z",
+        "kind": "REQUEST",
+        "requestId": "ec00b710ad",
+        "provider": "lighthouse",
+        "object": "segment_00008.ts"
+      },
+      {
+        "id": 66,
+        "at": "2026-11-06T01:08:16.173Z",
+        "kind": "DELIVERED",
+        "requestId": "ec00b710ad",
+        "provider": "lighthouse",
+        "object": "segment_00008.ts",
+        "bytes": 12660672,
+        "httpStatus": 200,
+        "sha256": "34b9b8af1ee59bbb03edd87771a878fad23d021e39ff9d83d685b29819f9c537",
+        "attemptMs": 1659,
+        "requestMs": 1659,
+        "failover": false
+      },
+      {
+        "id": 67,
+        "at": "2026-11-06T01:08:16.303Z",
+        "kind": "REQUEST",
+        "requestId": "e7827a0097",
+        "provider": "lighthouse",
+        "object": "segment_00009.ts"
+      },
+      {
+        "id": 68,
+        "at": "2026-11-06T01:08:18.810Z",
+        "kind": "DELIVERED",
+        "requestId": "e7827a0097",
+        "provider": "lighthouse",
+        "object": "segment_00009.ts",
+        "bytes": 13601424,
+        "httpStatus": 200,
+        "sha256": "a3beb21f6d05ec05b9eaaf5fb06b4aa87863db3d255d5c3ace8640df38ed758c",
+        "attemptMs": 2507,
+        "requestMs": 2507,
+        "failover": false
+      },
+      {
+        "id": 69,
+        "at": "2026-11-06T01:08:18.939Z",
+        "kind": "REQUEST",
+        "requestId": "af18200576",
+        "provider": "lighthouse",
+        "object": "segment_00010.ts"
+      },
+      {
+        "id": 70,
+        "at": "2026-11-06T01:08:21.906Z",
+        "kind": "DELIVERED",
+        "requestId": "af18200576",
+        "provider": "lighthouse",
+        "object": "segment_00010.ts",
+        "bytes": 12848860,
+        "httpStatus": 200,
+        "sha256": "4c06eb56328512c9bca996b50f9b6b5c78feae38a209cbb69457069ac84e37ef",
+        "attemptMs": 2967,
+        "requestMs": 2967,
+        "failover": false
+      },
+      {
+        "id": 71,
+        "at": "2026-11-06T01:08:23.631Z",
+        "kind": "REQUEST",
+        "requestId": "7c84d20379",
+        "provider": "lighthouse",
+        "object": "segment_00011.ts"
+      },
+      {
+        "id": 72,
+        "at": "2026-11-06T01:08:27.011Z",
+        "kind": "DELIVERED",
+        "requestId": "7c84d20379",
+        "provider": "lighthouse",
+        "object": "segment_00011.ts",
+        "bytes": 13178800,
+        "httpStatus": 200,
+        "sha256": "df2a64c4925d24853aa2a2ca38664f9657fe8c78ddd8f97846999924515b2f87",
+        "attemptMs": 3379,
+        "requestMs": 3380,
+        "failover": false
+      },
+      {
+        "id": 73,
+        "at": "2026-11-06T01:08:28.737Z",
+        "kind": "REQUEST",
+        "requestId": "cefa11cb72",
+        "provider": "lighthouse",
+        "object": "segment_00012.ts"
+      },
+      {
+        "id": 74,
+        "at": "2026-11-06T01:08:32.482Z",
+        "kind": "DELIVERED",
+        "requestId": "cefa11cb72",
+        "provider": "lighthouse",
+        "object": "segment_00012.ts",
+        "bytes": 13802020,
+        "httpStatus": 200,
+        "sha256": "97047e353197644f35f35627a1b65494999df6237f379d6ad21749452b494d1b",
+        "attemptMs": 3745,
+        "requestMs": 3745,
+        "failover": false
+      },
+      {
+        "id": 75,
+        "at": "2026-11-06T01:08:33.832Z",
+        "kind": "REQUEST",
+        "requestId": "9068dba100",
+        "provider": "lighthouse",
+        "object": "segment_00013.ts"
+      },
+      {
+        "id": 76,
+        "at": "2026-11-06T01:08:36.167Z",
+        "kind": "DELIVERED",
+        "requestId": "9068dba100",
+        "provider": "lighthouse",
+        "object": "segment_00013.ts",
+        "bytes": 9575592,
+        "httpStatus": 200,
+        "sha256": "a2ffcf4f8986ec22af23cda33d76b0190742d8aff183493d2902fb8887006249",
+        "attemptMs": 2335,
+        "requestMs": 2335,
+        "failover": false
+      }
+    ]
+  },
+  "browser": {
+    "framesObserved": 2156,
+    "currentTime": 71.957333,
+    "latestStallMs": null,
+    "events": [
+      {
+        "at": "2026-11-06T01:07:52.514Z",
+        "event": "START",
+        "mediaTime": 0
+      },
+      {
+        "at": "2026-11-06T01:07:56.418Z",
+        "event": "PLAYING",
+        "mediaTime": 0
+      },
+      {
+        "at": "2026-11-06T01:07:56.419Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 0,
+        "name": "segment_00000.ts",
+        "start": 0,
+        "duration": 5.312
+      },
+      {
+        "at": "2026-11-06T01:08:01.927Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 5.395,
+        "name": "segment_00001.ts",
+        "start": 5.309333333333333,
+        "duration": 5.133333333333333
+      },
+      {
+        "at": "2026-11-06T01:08:04.503Z",
+        "event": "SIMULATION_CLICK",
+        "mediaTime": 7.972
+      },
+      {
+        "at": "2026-11-06T01:08:07.028Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 10.497,
+        "name": "segment_00002.ts",
+        "start": 10.442666666666666,
+        "duration": 5.2666666666666675
+      },
+      {
+        "at": "2026-11-06T01:08:10.849Z",
+        "event": "STORJ_SIMULATION_CLICK",
+        "mediaTime": 14.317
+      },
+      {
+        "at": "2026-11-06T01:08:12.328Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 15.796,
+        "name": "segment_00003.ts",
+        "start": 15.709333333333333,
+        "duration": 5.066666666666666
+      },
+      {
+        "at": "2026-11-06T01:08:17.327Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 20.795,
+        "name": "segment_00004.ts",
+        "start": 20.776,
+        "duration": 5.266666666666666
+      },
+      {
+        "at": "2026-11-06T01:08:22.632Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 26.1,
+        "name": "segment_00005.ts",
+        "start": 26.042666666666666,
+        "duration": 5.266666666666669
+      },
+      {
+        "at": "2026-11-06T01:08:27.938Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 31.406,
+        "name": "segment_00006.ts",
+        "start": 31.309333333333335,
+        "duration": 5.266666666666666
+      },
+      {
+        "at": "2026-11-06T01:08:33.128Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 36.596,
+        "name": "segment_00007.ts",
+        "start": 36.576,
+        "duration": 5.200000000000003
+      },
+      {
+        "at": "2026-11-06T01:08:38.327Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 41.796,
+        "name": "segment_00008.ts",
+        "start": 41.776,
+        "duration": 5.066666666666663
+      },
+      {
+        "at": "2026-11-06T01:08:43.427Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 46.896,
+        "name": "segment_00009.ts",
+        "start": 46.842666666666666,
+        "duration": 5.200000000000003
+      },
+      {
+        "at": "2026-11-06T01:08:48.636Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 52.105,
+        "name": "segment_00010.ts",
+        "start": 52.04266666666667,
+        "duration": 5.033333333333331
+      },
+      {
+        "at": "2026-11-06T01:08:53.629Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 57.098,
+        "name": "segment_00011.ts",
+        "start": 57.076,
+        "duration": 5.033333333333331
+      },
+      {
+        "at": "2026-11-06T01:08:58.735Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 62.203,
+        "name": "segment_00012.ts",
+        "start": 62.10933333333333,
+        "duration": 5.133333333333333
+      },
+      {
+        "at": "2026-11-06T01:09:03.827Z",
+        "event": "PLAYBACK_FRAGMENT",
+        "mediaTime": 67.296,
+        "name": "segment_00013.ts",
+        "start": 67.24266666666666,
+        "duration": 4.714666666666673
+      },
+      {
+        "at": "2026-11-06T01:09:08.499Z",
+        "event": "PAUSED",
+        "mediaTime": 71.957
+      },
+      {
+        "at": "2026-11-06T01:09:08.500Z",
+        "event": "ENDED",
+        "mediaTime": 71.957
+      }
+    ]
+  }
+}

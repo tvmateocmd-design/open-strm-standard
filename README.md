@@ -2,6 +2,18 @@
 
 RelayStream is an open-source framework for decentralized media coordination, storage orchestration, metadata indexing, and media discovery.
 
+## Verified prototype milestone — November 2026
+
+The [three-provider failover demo](demos/three-provider-failover/README.md) now includes the working Node.js gateway, Windows launcher, browser dashboard, integrity inventory, automated tests, and exported playback evidence.
+
+- One playback URL routes VOD retrieval across **Sia → Storj → Lighthouse**.
+- All 15 media objects are checked against saved SHA-256 hashes before delivery.
+- Two recorded Windows runs completed sequential gateway-simulated outages with no browser-recorded stalls. These are controlled demonstrations, not network-wide outage tests or production guarantees.
+- Separately, live HLS delivery was demonstrated on desktop and Android Chrome over cellular using FFmpeg, a Python server, and Cloudflare Tunnel. That live pipeline is separate from this VOD gateway; its private feed credentials and broadcast recordings are not included here.
+- Solana rights coordination and a reusable Open-STRM-driven gateway remain development work. The failover demo performs no blockchain transactions.
+
+This code predates the Eternal sprint and is documented as its starting baseline. See the [evidence and limitations](demos/three-provider-failover/evidence/README.md).
+
 ## Overview
 
 The Open-STRM Standard is being developed to explore how decentralized storage networks, metadata systems, and media applications can work together through a unified coordination layer.
@@ -100,3 +112,4 @@ VAL IT Tech Solutions
 Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full terms.
 
 Copyright 2026 Val IT Tech Solutions, LLC, subject to confirmation of the ownership of individual contributions. The Apache 2.0 license does not grant trademark rights to the RelayStream or Open-STRM brands.
+

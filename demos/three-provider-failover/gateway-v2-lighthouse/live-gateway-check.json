@@ -1,0 +1,156 @@
+{
+  "checkedAt": "2026-11-05T22:12:00.154Z",
+  "note": "Real Lighthouse playlist and first segment retrieved through gateway with Sia/Storj simulated blocked. No browser playback measured.",
+  "activeRoute": "lighthouse",
+  "preferred": "lighthouse",
+  "simulated": true,
+  "blockedProviders": [
+    "sia",
+    "storj"
+  ],
+  "recoveryMs": 2518,
+  "outageToFallbackMs": 9733,
+  "inflight": 0,
+  "verifiedAt": "2026-11-02T16:42:51.652Z",
+  "package": {
+    "count": 14,
+    "seconds": 71.9
+  },
+  "providers": {
+    "sia": {
+      "status": "Simulated unavailable",
+      "verifiedBytes": 0,
+      "deliveries": 0
+    },
+    "storj": {
+      "status": "Simulated unavailable",
+      "verifiedBytes": 0,
+      "deliveries": 0
+    },
+    "lighthouse": {
+      "status": "Retrieval verified",
+      "verifiedBytes": 13245203,
+      "deliveries": 2
+    }
+  },
+  "events": [
+    {
+      "id": 1,
+      "at": "2026-11-05T22:11:50.381Z",
+      "kind": "SIMULATED_OUTAGE",
+      "provider": "sia",
+      "note": "Gateway-only simulation; upstream services and media are unchanged."
+    },
+    {
+      "id": 2,
+      "at": "2026-11-05T22:11:50.384Z",
+      "kind": "SIMULATED_OUTAGE",
+      "provider": "storj",
+      "note": "Gateway-only simulation; upstream services and media are unchanged."
+    },
+    {
+      "id": 3,
+      "at": "2026-11-05T22:11:50.385Z",
+      "kind": "SIMULATED_READ_BLOCKED",
+      "requestId": "4813ea26ba",
+      "provider": "sia",
+      "object": "index.m3u8",
+      "bytes": 0,
+      "note": "No upstream request made for this blocked provider."
+    },
+    {
+      "id": 4,
+      "at": "2026-11-05T22:11:50.385Z",
+      "kind": "SIMULATED_READ_BLOCKED",
+      "requestId": "4813ea26ba",
+      "provider": "storj",
+      "object": "index.m3u8",
+      "bytes": 0,
+      "note": "No upstream request made for this blocked provider."
+    },
+    {
+      "id": 5,
+      "at": "2026-11-05T22:11:50.385Z",
+      "kind": "REQUEST",
+      "requestId": "4813ea26ba",
+      "provider": "lighthouse",
+      "object": "index.m3u8"
+    },
+    {
+      "id": 6,
+      "at": "2026-11-05T22:11:57.596Z",
+      "kind": "DELIVERED",
+      "requestId": "4813ea26ba",
+      "provider": "lighthouse",
+      "object": "index.m3u8",
+      "bytes": 603,
+      "httpStatus": 200,
+      "sha256": "fa3cc6ac962cf0af1ec30d63e41192bf3958f8778083a3307a2ce65840ad5d9c",
+      "attemptMs": 7209,
+      "requestMs": 7211,
+      "failover": true
+    },
+    {
+      "id": 7,
+      "at": "2026-11-05T22:11:57.596Z",
+      "kind": "FAILOVER",
+      "requestId": "4813ea26ba",
+      "to": "lighthouse",
+      "object": "index.m3u8",
+      "retrievalRecoveryMs": 7211,
+      "note": "Verified fallback bytes ready at gateway; playback is measured separately."
+    },
+    {
+      "id": 8,
+      "at": "2026-11-05T22:11:57.599Z",
+      "kind": "SIMULATED_READ_BLOCKED",
+      "requestId": "f21d65c033",
+      "provider": "sia",
+      "object": "segment_00000.ts",
+      "bytes": 0,
+      "note": "No upstream request made for this blocked provider."
+    },
+    {
+      "id": 9,
+      "at": "2026-11-05T22:11:57.599Z",
+      "kind": "SIMULATED_READ_BLOCKED",
+      "requestId": "f21d65c033",
+      "provider": "storj",
+      "object": "segment_00000.ts",
+      "bytes": 0,
+      "note": "No upstream request made for this blocked provider."
+    },
+    {
+      "id": 10,
+      "at": "2026-11-05T22:11:57.599Z",
+      "kind": "REQUEST",
+      "requestId": "f21d65c033",
+      "provider": "lighthouse",
+      "object": "segment_00000.ts"
+    },
+    {
+      "id": 11,
+      "at": "2026-11-05T22:12:00.117Z",
+      "kind": "DELIVERED",
+      "requestId": "f21d65c033",
+      "provider": "lighthouse",
+      "object": "segment_00000.ts",
+      "bytes": 13244600,
+      "httpStatus": 200,
+      "sha256": "6b0dd2e335938e73beb759d44faabe5c8eee2d2fb8cd1eb9aaebf270e5c8c4b3",
+      "attemptMs": 2517,
+      "requestMs": 2518,
+      "failover": true
+    },
+    {
+      "id": 12,
+      "at": "2026-11-05T22:12:00.117Z",
+      "kind": "FAILOVER",
+      "requestId": "f21d65c033",
+      "to": "lighthouse",
+      "object": "segment_00000.ts",
+      "retrievalRecoveryMs": 2518,
+      "note": "Verified fallback bytes ready at gateway; playback is measured separately."
+    }
+  ]
+}
